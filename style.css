@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__sec {
+    background-image: url('img/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__content {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.header__content h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding-bottom: 25px;
+    line-height: 65px;
+}
+span {
+    color: rgb(238, 50, 50);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-size: 3.5rem;
+}
+.header__content p {
+    font-size: 15px;
+    line-height: 2;
+}
+.btn {
+    padding: 10px 20px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Bio section */
+
+.bio__sec {
+    background-image: url('img/biography-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 50px;
+}
+.bio__content {
+    margin-left: 35px;
+}
+.bio__content h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-bottom: 25px;
+    line-height: 65px;
+}
+.bio__content p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* Portfolio Sec */
+.portfolio__section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: url('img/latest-work-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.portfolio__text h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.portfolio__text h1::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    margin: 0 auto;
+    background: red;
+}
+.item {
+   
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+    padding: 20px 15px;
+    
+}
+.item:hover {
+    cursor: pointer;
+}
+.item img {
+    border-radius: 25px;
+}
+.item img:hover {
+    box-shadow: 0 8px 20 10 rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Section */
+.testimoinal__sec {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.test__text h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+}
+.test__text h1::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    margin: 0 auto;
+    background: red;
+}
+.review {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.blockquote p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.box {
+    text-align: center;
+    background: #ff7675;
+    padding: 30px 4px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.box p {
+    font-size: 16px;
+}
+.footer__sec{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer__text p {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    .header__sec {
+        text-align: center;
+    }
+    .header__content h1 {
+        font-size: 2rem;
+    }
+    .header__content span {
+        font-size: 2rem;
+    }
+    .bio__img img {
+        padding-bottom: 30px;
+    }
+    .bio__content {
+        text-align: center;
+    }
+    .bio__content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .portfolio__text h1 {
+        font-size: 2rem;
+        position: relative;
+    }
+    .portfolio__text h1::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        margin: 0 auto;
+        background: red;
+    }
+    .test__text h1 {
+        font-size: 1.5rem;
+        position: relative;
+    }
+    .review {
+        margin-top: -40px;
+       
+    }
+    .test__text h1::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        margin: 0 auto;
+        background: red;
+    }
+    .box {
+        margin-top: 52px;
+        padding: 10px 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .box h2{
+        font-size: 24px;
+    }
+}
